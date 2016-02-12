@@ -1,3 +1,72 @@
+
+/* -------------------------------- 
+NavBar
+
+-------------------------------- */
+
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
 /* -------------------------------- 
 
 Primary style
@@ -15,8 +84,8 @@ Primary style
 
 body {
   font-size: 100%;
-  font-family: "Open Sans", sans-serif;
-  color: #4e5359;
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #337ab7;
   background-color: #f3f3f5;
 }
 body::after {
@@ -61,7 +130,7 @@ header {
   height: 180px;
   line-height: 180px;
   text-align: center;
-  background-color: #a9c056;
+  background-color: #337ab7;
 }
 header h1 {
   color: #ffffff;
@@ -179,7 +248,7 @@ header h1 {
     left: 0;
     height: 100%;
     width: 3px;
-    background-color: #a9c056;
+    background-color: #337ab7;
     opacity: 0;
     -webkit-transition: opacity 0.2s;
     -moz-transition: opacity 0.2s;
@@ -376,6 +445,7 @@ header h1 {
   display: block;
   margin: 1.6em 0 .4em;
   line-height: 1.2;
+  color: #337ab7;
 }
 @media only screen and (min-width: 768px) {
   .cd-faq-trigger {
